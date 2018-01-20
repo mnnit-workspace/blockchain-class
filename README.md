@@ -19,6 +19,25 @@ Download the .exe file from [here](https://download.docker.com/win/stable/Docker
 ##### Others
 For other operating system follow the instructions for docker community edition (Docker CE). Browse the list at [here](https://docs.docker.com/engine/installation/#supported-platforms).
 
+#### Configuring proxy
+For confuring proxy on docker we need to add the proxy configuration in the Docker systemd service file.
+Instructions below are for linux distros only.
+
+1. Create a systemd drop-in directory for the docker service:
+
+```sudo mkdir -p /etc/systemd/system/docker.service.d```
+
+2. Create a file `/etc/systemd/system/docker.service.d/https-proxy.conf` that adds HTTPS_PROXY settings
+
+``` sudo touch /etc/systemd/system/docker.service.d/https-proxy.conf```
+
+3. Enter following things in the file created in earlier step (Replace proxy server with your choice of server).
+
+```
+[Service]
+Environment="HTTPS_PROXY=http://heed:ravi@172.31.52.52:3128/"
+```
+
 #### Getting the image
 Once you have installed docker on your system, pull the `khalibartan/testrpcenv:v1` image. This image contains all the necessary node modules and other dependencies for running the app.
 
