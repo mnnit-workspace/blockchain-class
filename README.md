@@ -49,10 +49,17 @@ Note: You might need to use sudo on linux
 
 ### Building Environment from scratch
 If you don't want to use docker image and want to build your own env from scratch. Install following dependencies (all for nodejs)
-- [Nodejs](https://nodejs.org/en/download/package-manager/) (version 8.9.4)
+
+- [nodejs](https://nodejs.org/en/download/package-manager/) (version 8.9.4)
 - [ganache cli](https://github.com/trufflesuite/ganache-cli) (version 6.0.3)
-- [Web3js](https://github.com/ethereum/web3.js/) (version 0.20.2)
+- [web3js](https://github.com/ethereum/web3.js/) (version 0.20.2)
 - [solc](https://www.npmjs.com/package/solc)
+- [truffle](https://github.com/trufflesuite/truffle)
+- [webpack](https://www.npmjs.com/package/webpack)
+
+#### Ubuntu
+Ubuntu users can use the `install.sh` script to install all the packages
+
 
 
 
