@@ -3,7 +3,7 @@ This repo contains blockchain class materials.
 ## Getting the environment
 
 ### Using Docker Container
-**Recommended:** We recommend everyone to use docker image khalibartan/testrpcenv:v1 for environment.
+**Recommended:** We recommend everyone to use docker image `khalibartan/testrpcenv:latest` for environment.
 #### Installing Docker
 
 ##### On Ubuntu
@@ -39,7 +39,7 @@ Environment="HTTPS_PROXY=http://heed:ravi@172.31.52.52:3128/"
 ```
 
 #### Getting the image
-Once you have installed docker on your system, pull the `khalibartan/testrpcenv:v1` image. This image contains all the necessary node modules and other dependencies for running the app.
+Once you have installed docker on your system, pull the `khalibartan/testrpcenv:latest` image. This image contains all the necessary node modules and other dependencies for running the app.
 
 For pulling the docker image run the command
 
