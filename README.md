@@ -43,7 +43,7 @@ Once you have installed docker on your system, pull the `khalibartan/testrpcenv:
 
 For pulling the docker image run the command
 
-```docker pull khalibartan/testrpcenv:v1```
+```docker pull khalibartan/testrpcenv:latest```
 
 Note: You might need to use sudo on linux
 
