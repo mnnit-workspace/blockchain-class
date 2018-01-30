@@ -51,8 +51,10 @@ Note: You might need to use sudo on linux
 
 #### Running the docker image
 You will need to expose ports of a file hosting server and ganache-cli to outside world, to run app on browser.
-Kickstart the docker container with following command
-```sudo docker run -i -t -p 8000:8000 -p 8545:8545 khalibartan/testrpcenv```
+Kickstart the docker container with following command (use sudo before if you are using linux)
+
+```docker run -i -t -p 8000:8000 -p 8545:8545 khalibartan/testrpcenv```
+
 Port 8000 is exposed because we will use Python2 SimpleHTTPServer for file hoisting and 8545 is default port for ganache-cli.
 
 ### Building Environment from scratch
